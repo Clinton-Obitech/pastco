@@ -88,3 +88,7 @@ if (hour <= 11) {
 adButton.innerHTML = text;
 
 }
+
+document.getElementById("close-kaaf-levels").addEventListener("click", function () {
+  document.getElementById("kaaf-levels").style.display = "none";
+})

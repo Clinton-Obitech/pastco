@@ -69,6 +69,7 @@ main#home > #level-drop > button i {
 
 main#home > #level-drop > button {
   font-size: 1.1rem;
+  margin: 1rem auto;
 }
 
 main#home #drop-links a {
@@ -87,10 +88,85 @@ main#home #drop-links a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.showLevels {
+  display: block;
+}
+
+.kaaf-levels {
+  display: none;
+  position: absolute;
+  top: 0;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding: 0 0.5rem;
+}
+
+.levels-links > a {
+  background-color: lightblue;
+  padding: 0.5rem 0;
+  width: 80%;
+  color: black;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  font-weight: lighter;
+}
+
+.levels-links  i {
+  font-size: 1rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
+.levels-links {
+  background-color: black;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1.2px solid lightblue;
+  position: relative;
+}
+
 main#home #drop-links {
-   width: 70%;
-   margin: auto;
+   width: 100%;
    display: none;
+   position: relative;
+}
+
+main#home #drop-links > p {
+  text-align: center;
+}
+
+main#home #drop-links > .btn {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 0 1rem;
+}
+
+main#home #drop-links > .btn::-webkit-scrollbar {
+  display: none;
+}
+
+main#home #drop-links > .btn button {
+  padding: 3rem 1rem;
+  margin-right: 0.5rem;
+  min-width: 50%;
+  background-size: 100%;
+  background-position: center;
+  border: none;
+}
+
+main#home #drop-links > .btn button:hover {
+  opacity: 0.7;
 }
 
 header {
@@ -370,11 +446,11 @@ main#past a.lv200 {
   margin-left: 2rem;
 }
 
-#past #lv-100 h2, #lv-200 h2 {
+#past #lv-100 h2, #lv-200 h2, #lv-300 h2, #lv-400 h2 {
   text-align: center;
 }
 
-#past  #lv-100 h2.exp, #lv-200 h2.exp {
+#past  #lv-100 h2.exp, #lv-200 h2.exp , #lv-300 h2.exp, #lv-400 h2.exp {
   color: white;
   margin-bottom: 2rem;
 }
@@ -505,8 +581,8 @@ main#home #sub-hero h2 {
   background: linear-gradient(to bottom, lightblue, whitesmoke, lightblue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 80%;
-  margin: 1.5rem auto 4rem;
+  width: 95%;
+  margin: 1.5rem auto 2rem;
   font-family: "Fugaz One", sans-serif;
   font-weight: 400;
   font-style: normal;

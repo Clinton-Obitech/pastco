@@ -32,6 +32,12 @@ $(document).ready(function() {
 })
 
 $(document).ready(function() {
+    $("#close-kaaf-levels").click(function() {
+        $("#kaaf-levels").slideToggle();
+    })
+})
+
+$(document).ready(function() {
     $("#level-drop > button").click(function() {
         $("#level-drop > #drop-links").slideToggle();
     })
@@ -43,3 +49,8 @@ $(document).ready(function() {
     })
 })
 
+$(document).ready(function() {
+    $("#openKaaf").click(function() {
+        $("#kaaf-levels").slideToggle();
+    })
+})
