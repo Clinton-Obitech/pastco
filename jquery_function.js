@@ -31,11 +31,6 @@ $(document).ready(function() {
     })
 })
 
-$(document).ready(function() {
-    $("#close-kaaf-levels").click(function() {
-        $("#kaaf-levels").slideToggle();
-    })
-})
 
 $(document).ready(function() {
     $("#level-drop > button").click(function() {
@@ -52,5 +47,35 @@ $(document).ready(function() {
 $(document).ready(function() {
     $("#openKaaf").click(function() {
         $("#kaaf-levels").slideToggle();
+    })
+})
+
+$(document).ready(function() {
+    $("#close-kaaf-levels").click(function() {
+        $("#kaaf-levels").slideToggle();
+    })
+})
+
+$(document).ready(function() {
+    $("#openNmtcatibie").click(function() {
+        $("#nmtcatibie-levels").slideToggle();
+    })
+})
+
+$(document).ready(function() {
+    $("#close-nmtcatibie-levels").click(function() {
+        $("#nmtcatibie-levels").slideToggle();
+    })
+})
+
+$(document).ready(function() {
+    $("#openNmtcasan").click(function() {
+        $("#nmtcasan-levels").slideToggle();
+    })
+})
+
+$(document).ready(function() {
+    $("#close-nmtcasan-levels").click(function() {
+        $("#nmtcasan-levels").slideToggle();
     })
 })

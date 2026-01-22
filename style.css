@@ -92,7 +92,7 @@ main#home #drop-links a:hover {
   display: block;
 }
 
-.kaaf-levels {
+.kaaf-levels, .nmtcatibie-levels, .nmtcasan-levels {
   display: none;
   position: absolute;
   top: 0;
@@ -102,9 +102,18 @@ main#home #drop-links a:hover {
   padding: 0 0.5rem;
 }
 
+#search {
+  width: 100%;
+  padding: 0.3rem;
+  font-size: 1.1rem;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 3px;
+}
+
 .levels-links > a {
   background-color: lightblue;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   width: 80%;
   color: black;
   margin-bottom: 0.5rem;
@@ -116,7 +125,7 @@ main#home #drop-links a:hover {
 }
 
 .levels-links  i {
-  font-size: 1rem;
+  font-size: 1.4rem;
   position: absolute;
   right: 0.5rem;
   top: 0.5rem;
@@ -150,6 +159,7 @@ main#home #drop-links > .btn {
   overflow: auto;
   white-space: nowrap;
   padding: 0 1rem;
+  margin-right: 0.5rem;
 }
 
 main#home #drop-links > .btn::-webkit-scrollbar {
@@ -157,12 +167,22 @@ main#home #drop-links > .btn::-webkit-scrollbar {
 }
 
 main#home #drop-links > .btn button {
-  padding: 3rem 1rem;
-  margin-right: 0.5rem;
-  min-width: 50%;
-  background-size: 100%;
-  background-position: center;
+  padding: 0.4rem;
+  margin-right: 1rem;
+  min-width: 70%;
   border: none;
+  box-shadow: 0px 0px 3px lightblue;
+  display: flex;
+  flex-direction: column;
+}
+
+main#home #drop-links > .btn img {
+  object-fit: cover;
+  height: 170px;
+}
+
+main#home #drop-links > .btn h2 {
+  padding-bottom: 0.4rem;
 }
 
 main#home #drop-links > .btn button:hover {
@@ -581,12 +601,12 @@ main#home #sub-hero h2 {
   background: linear-gradient(to bottom, lightblue, whitesmoke, lightblue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 95%;
+  width: 90%;
   margin: 1.5rem auto 2rem;
   font-family: "Fugaz One", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
 }
 
@@ -597,10 +617,12 @@ main#home #sub-hero ul {
   font-family: sans-serif;
   font-weight: 400;
   margin: 1rem 0;
+  text-align: center;
 }
 
 main#home #sub-hero i {
   color: lightgreen;
+  font-size: 1.5rem;
 }
 
 main#home #sub-hero h3 {

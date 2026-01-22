@@ -83,7 +83,9 @@
     <i id="bars" class="fa-solid fa-bars"></i>
     <div>
     <button id="nav-btn">Courses <i id="chev" class="fa-solid fa-chevron-up"></i></button>
+    
     <div id="courses">
+      <input type="text" id="search" placeholder="Search Courses...">
       <a href="past-questions2.html#Pharmacology">Pharmacology</a>
       <a href="past-questions2.html#Human">Human Growth and Development</a>
       <a href="past-questions2.html#medicalNursing">Medical Nursing</a>
@@ -97,6 +99,8 @@
       <a href="past-questions1.html#basicNursing">Basic Nursing</a>
       <a href="past-questions1.html#firstAid">First Aid</a>
       <a href="past-questions1.html#professionalAdj">Professional Adjustment</a>
+
+      <p id="not-found" style="display: none; color: white; text-align: center; padding-top: 0.5rem;">Course not found</p>
     </div>
     </div>
   </nav>
@@ -116,34 +120,64 @@
     <div id="drop-links">
       <p style="color: white; font-family: sans-serif;">Select Institution</p>
     <div class="btn">
-    <button style="background-image: url(images/kaaflogo.jpg);" id="openKaaf" type="button"></button>
-    <button style="background-image: url(images/nmtca.png);" type="button"></button>
-    <button style="background-image: url(images/nmtcatibie.png);" type="button"></button>
+    <button id="openKaaf" type="button">
+      <img src="images/kaaflogo.jpg" alt="kaaf logo" width="100%">
+    </button>
+
+    <button id="openNmtcasan" type="button">
+      <img src="images/nmtca.png" alt="logo" width="100%">
+    </button>
+
+    <button id="openNmtcatibie" type="button">
+      <img src="images/nmtcatibie.png" alt="logo" width="100%">
+    </button>
     </div>
     </div>
 
     <div class="kaaf-levels" id="kaaf-levels">
       <div class="levels-links">
       <i id="close-kaaf-levels" style="color: lightblue;" class="fa-solid fa-circle-xmark"></i>
-      <a href="past-questions1.html">KAAF 100 Level</a>
-      <a href="past-questions2.html">KAAF 200 Level</a>
-      <a href="past-questions3.html">KAAF 300 Level</a>
-      <a style="margin-bottom: 0;" href="past-questions4.html">KAAF 400 Level</a>
+      <a href="/kaaf/past-questions1.html">KAAF 100 Level</a>
+      <a href="/kaaf/past-questions2.html">KAAF 200 Level</a>
+      <a href="/kaaf/past-questions3.html">KAAF 300 Level</a>
+      <a style="margin-bottom: 0;" href="/kaaf/past-questions4.html">KAAF 400 Level</a>
       </div>
     </div>
+
+    <div class="nmtcasan-levels" id="nmtcasan-levels">
+      <div class="levels-links">
+      <i id="close-nmtcasan-levels" style="color: lightblue;" class="fa-solid fa-circle-xmark"></i>
+      <a href="past-questions1.html">NMTCASAN 100 Level</a>
+      <a href="past-questions2.html">NMTCASAN 200 Level</a>
+      <a href="past-questions3.html">NMTCASAN 300 Level</a>
+      <a style="margin-bottom: 0;" href="past-questions4.html">NMTCASAN 400 Level</a>
+      </div>
     </div>
 
+    <div class="nmtcatibie-levels" id="nmtcatibie-levels">
+      <div class="levels-links">
+      <i id="close-nmtcatibie-levels" style="color: lightblue;" class="fa-solid fa-circle-xmark"></i>
+      <a href="past-questions1.html">NMTCATIBIE 100 Level</a>
+      <a href="past-questions2.html">NMTCATIBIE 200 Level</a>
+      <a href="past-questions3.html">NMTCATIBIE 300 Level</a>
+      <a style="margin-bottom: 0;" href="past-questions4.html">NMTCATIBIE 400 Level</a>
+      </div>
+    </div>
+
+    </div>
+
+
     <div id="sub-hero">
-      <h2>Study for your nursing level exams with confidence!</h2>
+      <h2>Study <br> for your <br>nursing level<br> exams with <br>confidence!</h2>
       <h3>What You Will Find Here<br><i class="fa-solid fa-question"></i></h3>
       <div>
       <p>
         Our site provides verified nursing past questions for nursing institutes to help you revise effectively.
       </p>
       <ul>
-        <li><i class="fa-solid fa-check"></i> Study from real past exams questions</li>
-        <li><i class="fa-solid fa-check"></i> Regularly updated content</li>
-        <li><i class="fa-solid fa-check"></i> 100% free access</li>
+        <li><i class="fa-solid fa-check"></i><br> Study from real past exams questions</li>
+        <li><i class="fa-solid fa-check"></i><br> Regularly updated content</li>
+        <li><i class="fa-solid fa-check"></i><br> 100% free access</li>
       </ul>
 
       </div>
@@ -162,7 +196,29 @@
     <p>&copy; Nursing PastCO 2025. All rights reserved</p>
     <p><small>Disclaimer: We are an independent resource and not affiliated with any official nursing body. Materials are for study purposes only.</small></p>
   </footer>
-  
+  <script>
+    const searchInput = document.getElementById("search");
+  const courses = document.querySelectorAll("#courses > a");
+  const notFound = document.getElementById("not-found");
+
+  searchInput.addEventListener("keyup", function() {
+    const searchValue = this.value.toLowerCase().trim();
+    let found = false;
+
+    courses.forEach(course => {
+      const text = course.textContent.toLowerCase();
+
+      if(text.includes(searchValue)) {
+        course.style.display = "block";
+        found = true;
+      } else {
+        course.style.display = "none";
+      }
+      
+    })
+    notFound.style.display = found ? "none" : "block";
+  })
+  </script>
   <script src="script.js"></script>
 </body>
 </html>

@@ -92,3 +92,30 @@ adButton.innerHTML = text;
 document.getElementById("close-kaaf-levels").addEventListener("click", function () {
   document.getElementById("kaaf-levels").style.display = "none";
 })
+
+document.getElementById("close-nmtcatibie-levels").addEventListener("click", function () {
+  document.getElementById("nmtcatibie-levels").style.display = "none";
+})
+
+
+  const searchInput = document.getElementById("search");
+  const courses = document.querySelectorAll("#courses > a");
+  const notFound = document.getElementById("not-found");
+
+  searchInput.addEventListener("keyup", function() {
+    const searchValue = this.value.toLowerCase().trim();
+    let found = false;
+
+    courses.forEach(course => {
+      const text = course.textContent.toLowerCase();
+
+      if(text.includes(searchValue)) {
+        course.style.display = "block";
+        found = true;
+      } else {
+        course.style.display = "none";
+      }
+    })
+
+    notFound.style.display = found ? "none" : "block";
+  })
