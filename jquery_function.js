@@ -51,8 +51,20 @@ $(document).ready(function() {
 })
 
 $(document).ready(function() {
+    $("#openKaaf-1").click(function() {
+        $("#kaaf-levels-1").slideToggle();
+    })
+})
+
+$(document).ready(function() {
     $("#close-kaaf-levels").click(function() {
         $("#kaaf-levels").slideToggle();
+    })
+})
+
+$(document).ready(function() {
+    $("#close-kaaf-levels-1").click(function() {
+        $("#kaaf-levels-1").slideToggle();
     })
 })
 

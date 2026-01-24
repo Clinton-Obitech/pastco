@@ -169,7 +169,7 @@ main#home #drop-links > .btn::-webkit-scrollbar {
 main#home #drop-links > .btn button {
   padding: 0.4rem;
   margin-right: 1rem;
-  min-width: 70%;
+  min-width: 80%;
   border: none;
   box-shadow: 0px 0px 3px lightblue;
   display: flex;
@@ -227,26 +227,35 @@ header #level-drop-1 {
 
 #drop-links-1 > .btn {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  height: 100vh;
   overflow: auto;
   position: absolute;
-  right: 0;
-  width: 400px;
+  padding: 0.5rem 0.5rem 8rem;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 5px;
 }
 
 #drop-links-1 > .btn button {
-  min-width: 200px;
-  margin: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0;
+  height: 130px;
 }
 
-#drop-links-1 {
-  position: absolute;
+#drop-links-1 img {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 5px;
+  object-position: center;
+  margin: 0;
 }
 
 header #level-drop-1 > button {
   border: 1.5px solid lightblue;
   background-color: transparent;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 3rem;
   color: lightblue;
   font-size: 1.1rem;
   border-radius: 5px;
@@ -254,22 +263,6 @@ header #level-drop-1 > button {
 
 header #level-drop-1 > button:hover {
   background-color: rgba(255,255,255, 0.1);
-}
-
-header #drop-links-1 a {
-  background-color: black;
-  padding: 0.5rem 2rem;
-  margin: 0 auto 0.5rem;
-  color: lightblue;
-  font-family: sans-serif;
-  border-radius: 5px;
-  display: block;
-  text-align: center;
-  border: 1.2px solid lightblue;
-}
-
-header #drop-links-1 a:hover {
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 header #level-drop-1 {
@@ -285,7 +278,6 @@ header #drop-links-1 {
   z-index: 6;
    display: none;
 }
-
 
 h3.head {
   color: white;
@@ -539,6 +531,7 @@ main#past .drop-main {
   font-weight: bold;
   display: inline-block;
   cursor: pointer;
+  border: 1.3px solid white;
 }
 
 main#past h2 {
