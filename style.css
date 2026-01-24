@@ -178,7 +178,9 @@ main#home #drop-links > .btn button {
 
 main#home #drop-links > .btn img {
   object-fit: cover;
-  height: 170px;
+  height: 150px;
+  border-radius: 5px;
+  object-position: center;
 }
 
 main#home #drop-links > .btn h2 {
@@ -221,6 +223,24 @@ header i {
 
 header #level-drop-1 {
   display: none;
+}
+
+#drop-links-1 > .btn {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  position: absolute;
+  right: 0;
+  width: 400px;
+}
+
+#drop-links-1 > .btn button {
+  min-width: 200px;
+  margin: 0.5rem;
+}
+
+#drop-links-1 {
+  position: absolute;
 }
 
 header #level-drop-1 > button {
@@ -336,20 +356,16 @@ nav div button i {
   padding: 0;
 }
 
-nav #courses a {
+nav #courses h3 {
   margin: 0.5rem 0;
   padding: 0.4rem 0.6rem;
-  background-color: lightblue;
+  background-color: rgba(0, 0, 0, 0.9);
   border-radius: 3px;
   color: white;
   font-family: Sans-Serif;
   text-shadow: 1px 1px 4px black;
   display: block;
-  border: 1.5px solid transparent;
-}
-
-nav #courses a:hover {
-  background-color: transparent;
+  font-weight: lighter;
   border: 1.5px solid whitesmoke;
 }
 
@@ -487,9 +503,11 @@ main#past .course h3 {
   background-color: rgba(255,255,255, 0.2);
   border-radius: 5px;
   font-family: "DM Serif Text", serif;
+  border: 1.3px solid lightblue;
   font-weight: 400;
   text-shadow: 0.5px 0.5px 10px black;
   margin: 1rem 0.5rem;
+  cursor: pointer;
 }
 
 main#past .course i {
@@ -512,13 +530,15 @@ main#past .drop-link {
 
 main#past .drop-main {
   color: whitesmoke;
-  border: 1.5px solid lightblue;
+  background-color: rgba(225, 225, 225, 0.1);
   font-family: Sans-Serif;
-  margin: 0.5rem 0;
+  margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 4px;
+  font-weight: lighter;
   font-weight: bold;
   display: inline-block;
+  cursor: pointer;
 }
 
 main#past h2 {
