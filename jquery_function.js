@@ -69,6 +69,18 @@ $(document).ready(function() {
 })
 
 $(document).ready(function() {
+    $("#openNmtcasan-1").click(function() {
+        $("#nmtcasan-levels-1").slideToggle();
+    })
+})
+
+$(document).ready(function() {
+    $("#openNmtcatibie-1").click(function() {
+        $("#nmtcatibie-levels-1").slideToggle();
+    })
+})
+
+$(document).ready(function() {
     $("#close-kaaf-levels").click(function() {
         $("#kaaf-levels").slideToggle();
     })

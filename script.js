@@ -1,3 +1,12 @@
+{
+//Footer dynamic date
+const date = new Date();
+const year = date.getFullYear();
+
+document.getElementById("displayDate").innerHTML = year;
+}
+
+{
 const buttons = document.querySelectorAll(".course h3");
 const content = document.querySelectorAll(".drop-down-course");
 const icons = document.querySelectorAll(".course h3 i");
@@ -16,6 +25,10 @@ buttons.forEach((btn, index) => {
   });
 });
 
+}
+
+
+{
 const linkBtn = document.querySelectorAll(".drop-main");
 const linkContent = document.querySelectorAll(".drop-link");
 
@@ -42,62 +55,10 @@ linkBtn.forEach((btn, index) => {
   });
 });
 
-
-const adButton = document.querySelector("a.smartlink");
-const time = new Date();
-const hour = time.getHours();
-
-let text;
-
-if (hour <= 11) {
-
-  text = "Proceed to more past questions";
-  
-} else if (hour >= 12 && hour <= 15) {
-
-  text = "Open related past questions";
-
-} else if (hour >= 16) {
-
-   text = "Unlock additional questions";
 }
 
-adButton.innerHTML = text;
 
 {
-
-const adButton = document.querySelector("a.smarthome");
-const time = new Date();
-const hour = time.getHours();
-
-let text;
-
-if (hour <= 11) {
-
-  text = "Access more study tools";
-  
-} else if (hour >= 12 && hour <= 15) {
-
-  text = "View more study content";
-
-} else if (hour >= 16) {
-
-   text = "View recommended study materials";
-}
-
-adButton.innerHTML = text;
-
-}
-
-document.getElementById("close-kaaf-levels").addEventListener("click", function () {
-  document.getElementById("kaaf-levels").style.display = "none";
-})
-
-document.getElementById("close-nmtcatibie-levels").addEventListener("click", function () {
-  document.getElementById("nmtcatibie-levels").style.display = "none";
-})
-
-
   const searchInput = document.getElementById("search");
   const courses = document.querySelectorAll("#courses > a");
   const notFound = document.getElementById("not-found");
@@ -119,3 +80,4 @@ document.getElementById("close-nmtcatibie-levels").addEventListener("click", fun
 
     notFound.style.display = found ? "none" : "block";
   })
+}

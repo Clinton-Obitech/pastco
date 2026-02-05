@@ -35,10 +35,6 @@ a.smartpast {
   border-radius: 4px;
 }
 
-a.smartlink:hover {
-  background-color: rgba(0, 157, 190, 0.2)
-}
-
 html, body {
   height: 100%;
   overflow-x: hidden;
@@ -86,6 +82,18 @@ main#home #drop-links a {
 
 main#home #drop-links a:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+main#home #drop-links .btn button {
+  position: relative;
+}
+
+main#home #drop-links .btn > button h4 {
+  position: absolute;
+  align-self: center;
+  padding: 0.5rem 1rem;
+  background-color: black;
+  border-radius: 0px 0px 5px 5px;
 }
 
 .showLevels {
@@ -187,7 +195,11 @@ main#home #drop-links > .btn h2 {
   padding-bottom: 0.4rem;
 }
 
-main#home #drop-links > .btn button:hover {
+main#home #drop-links > .btn button:active {
+  opacity: 0.7;
+}
+
+button:active {
   opacity: 0.7;
 }
 
@@ -334,10 +346,12 @@ nav div button {
   border-radius: 5px;
   color: black;
   font-weight: bolder;
-  padding: 0.2rem 3rem 0;
+  padding: 0.5rem 0.5rem 0;
   border: none;
   display: none;
+  width: 200px;
   font-size: 1.1rem;
+  text-align: center;
 }
 
 nav div button i {
@@ -435,7 +449,7 @@ main#home button {
   padding:0;
 }
 
-main#home button:hover, a.past-icon:hover {
+main#home button:active, a.past-icon:active {
   background-color: rgba(255,255,255, 0.1);
 }
 
@@ -612,12 +626,12 @@ main#home #sub-hero h2 {
   background: linear-gradient(to bottom, lightblue, whitesmoke, lightblue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 90%;
+  width: 80%;
   margin: 1.5rem auto 2rem;
   font-family: "Fugaz One", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
 }
 
@@ -710,8 +724,12 @@ footer div {
 }
 
 footer a:hover {
-  border: 1.5px solid lightblue;
+  border: 1.3px solid lightblue;
   border-radius: 5px;
+}
+
+a:active {
+  opacity: 0.7;
 }
 
 
@@ -763,7 +781,7 @@ footer a:hover {
 
   main#home #sub-hero h2 {
     text-align: center;
-    width: 70%;
+    width: 90%;
     margin: 1rem auto;
   }
 

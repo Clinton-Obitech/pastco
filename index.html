@@ -106,10 +106,24 @@
 
     <button id="openNmtcasan-1" type="button">
       <img src="images/nmtca.png" alt="logo" width="100%">
+
+      <div style="width: 100%; padding: 0; margin: 0 0 0 -0.5rem; width: 100%; border: none;" class="nmtcasan-levels" id="nmtcasan-levels-1">
+      <div style="border: none;" class="levels-links">
+      <i id="close-nmtcasan-levels-1" style="color: lightblue;" class="fa-solid fa-circle-xmark"></i>
+      <a style="margin-bottom: 0;" href="/nmtc/past-questions.html">NMTC PAST QUESTIONS</a>
+      </div>
+    </div>
     </button>
 
     <button id="openNmtcatibie-1" type="button">
       <img src="images/nmtcatibie.png" alt="logo" width="100%">
+
+      <div style="width: 100%; padding: 0; margin: 0 0 0 -0.5rem; width: 100%; border: none;" class="nmtcatibie-levels" id="nmtcatibie-levels-1">
+      <div style="border: none;" class="levels-links">
+      <i id="close-nmtcatibie-levels-1" style="color: lightblue;" class="fa-solid fa-circle-xmark"></i>
+      <a style="margin-bottom: 0;" href="/nmtc/past-questions.html">NMTC PAST QUESTIONS</a>
+      </div>
+    </div>
     </button>
 
     </div>
@@ -120,7 +134,7 @@
    <nav>
     <i id="bars" class="fa-solid fa-bars"></i>
     <div>
-    <button id="nav-btn">Courses <i id="chev" class="fa-solid fa-chevron-up"></i></button>
+    <button id="nav-btn">Available Courses <br><i id="chev" class="fa-solid fa-chevron-up"></i></button>
     
     <div id="courses">
       <input type="text" id="search" placeholder="Search Courses...">
@@ -158,6 +172,7 @@
       <h3>Mental Health I</h3>
       <h3>Physical Assessment</h3>
       <h3>Obstetrics Nursing III</h3>
+      <h2>Medicine and Medical Nursing</h2>
 
       <p id="not-found" style="display: none; color: white; text-align: center; padding-top: 0.5rem;">Course not found</p>
     </div>
@@ -181,18 +196,22 @@
     <div class="btn">
     <button id="openKaaf" type="button">
       <img src="images/kaaflogo.jpg" alt="kaaf logo" width="100%">
+      <h4>KAAF UNIVERSITY</h4>
     </button>
 
     <button id="openCug" type="button">
       <img src="images/cug.png" alt="logo" width="100%">
+      <h4>CATHOLIC UNIVERSITY</h4>
     </button>
 
     <button id="openNmtcasan" type="button">
       <img src="images/nmtca.png" alt="logo" width="100%">
+      <h4>NMTC ASANKRANGWA</h4>
     </button>
 
     <button id="openNmtcatibie" type="button">
       <img src="images/nmtcatibie.png" alt="logo" width="100%">
+      <h4>NMTC ATIBE</h4>
     </button>
     </div>
     </div>
@@ -217,20 +236,14 @@
     <div class="nmtcasan-levels" id="nmtcasan-levels">
       <div class="levels-links">
       <i id="close-nmtcasan-levels" style="color: lightblue;" class="fa-solid fa-circle-xmark"></i>
-      <a href="">NMTCASAN 100 Level</a>
-      <a href="">NMTCASAN 200 Level</a>
-      <a href="">NMTCASAN 300 Level</a>
-      <a style="margin-bottom: 0;" href="">NMTCASAN 400 Level</a>
+      <a style="margin-bottom: 0;" href="/nmtc/past-questions.html">NMTC PAST QUESTIONS</a>
       </div>
     </div>
 
     <div class="nmtcatibie-levels" id="nmtcatibie-levels">
       <div class="levels-links">
       <i id="close-nmtcatibie-levels" style="color: lightblue;" class="fa-solid fa-circle-xmark"></i>
-      <a href="">NMTCATIBIE 100 Level</a>
-      <a href="">NMTCATIBIE 200 Level</a>
-      <a href="">NMTCATIBIE 300 Level</a>
-      <a style="margin-bottom: 0;" href="">NMTCATIBIE 400 Level</a>
+      <a style="margin-bottom: 0;" href="/nmtc/past-questions.html">NMTC PAST QUESTIONS</a>
       </div>
     </div>
 
@@ -238,7 +251,7 @@
 
 
     <div id="sub-hero">
-      <h2>Study <br> for your <br>nursing level<br> exams with <br>confidence!</h2>
+      <h2>Study for your nursing level exams with confidence!</h2>
       <h3>What You Will Find Here<br><i class="fa-solid fa-question"></i></h3>
       <div>
       <p>
@@ -263,9 +276,10 @@
       <a href="contact.html">Contact Us</a>
       <a href="disclaimer.html">Disclaimer</a>
     </div>
-    <p>&copy; Nursing PastCO 2025. All rights reserved</p>
+    <p>&copy; Nursing PastCO 2025 &ndash; <span id="displayDate"></span>. All rights reserved</p>
     <p><small>Disclaimer: We are an independent resource and not affiliated with any official nursing body. Materials are for study purposes only.</small></p>
   </footer>
+  <script src="script.js"></script>
   <script>
     const searchInput = document.getElementById("search");
   const courses = document.querySelectorAll("#courses > h3");
@@ -289,6 +303,5 @@
     notFound.style.display = found ? "none" : "block";
   })
   </script>
-  <script src="script.js"></script>
 </body>
 </html>
