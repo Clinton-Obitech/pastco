@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+header img {
+  border-radius: 0px 0px 50px 50px;
+}
+
+header a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 #home-ad {
   margin: auto;
   margin-left: -1rem;
@@ -100,7 +110,7 @@ main#home #drop-links .btn > button h4 {
   display: block;
 }
 
-.kaaf-levels, .cug-levels, .nmtcatibie-levels, .nmtcasan-levels {
+.kaaf-levels, .cug-levels, .csuc-levels, .nmtcatibie-levels, .nmtcasan-levels {
   display: none;
   position: absolute;
   top: 0;
@@ -134,6 +144,13 @@ main#home #drop-links .btn > button h4 {
 
 .levels-links  i {
   font-size: 1.4rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
+.levels-links-1  i {
+  font-size: 1.2rem;
   position: absolute;
   right: 0.5rem;
   top: 0.5rem;
@@ -188,7 +205,7 @@ main#home #drop-links > .btn img {
   object-fit: cover;
   height: 150px;
   border-radius: 5px;
-  object-position: center;
+  object-position: center 35%;
 }
 
 main#home #drop-links > .btn h2 {
@@ -203,8 +220,12 @@ button:active {
   opacity: 0.7;
 }
 
+#drop-links-1 .btn a {
+  display: block;
+}
+
 header {
-  padding: 0.7rem 1rem;
+  padding: 0.3rem 1rem 0.3rem 0.3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -225,7 +246,6 @@ header h2 {
   font-family: "Berkshire Swash", serif;
   font-weight: 400;
   font-style: normal;
-  text-shadow: 1px 1px 3px lightblue;
 }
 
 header i {
@@ -235,6 +255,38 @@ header i {
 
 header #level-drop-1 {
   display: none;
+}
+
+.levels-links-1 {
+  background-color: black;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1.2px solid lightblue;
+  position: relative;
+}
+
+.levels-links-1 > a {
+  width: 90%;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  font-weight: lighter;
+  color: lightblue;
+  text-decoration: underline;
+}
+
+.bottom-line {
+  height: 15px;
+  background-color: lightblue;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 #drop-links-1 > .btn {
@@ -254,7 +306,10 @@ header #level-drop-1 {
   margin-bottom: 1rem;
   padding: 0;
   height: 130px;
+  text-align: center;
+  position: relative;
 }
+
 
 #drop-links-1 img {
   object-fit: cover;
@@ -288,7 +343,7 @@ header #drop-links-1 {
   flex-direction: column;
   top: 4rem;
   z-index: 6;
-   display: none;
+  display: none;
 }
 
 h3.head {
@@ -837,6 +892,13 @@ a:active {
     grid-template-columns: 2fr 6fr 0.5fr;
     justify-content: space-between;
     align-items: center;
+  }
+
+  header#info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
   header #level-drop-1 {

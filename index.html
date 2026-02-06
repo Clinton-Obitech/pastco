@@ -11,6 +11,7 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 />
+<link rel="icon" type="image/x-icon" href="/image/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=DM+Serif+Text:ital@0;1&family=Fugaz+One&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Mozilla+Headline:wght@200..700&family=Pacifico&family=Paytone+One&family=Titan+One&family=Young+Serif&display=swap" rel="stylesheet">
@@ -71,12 +72,13 @@
 <body>
   
   <header>
-    <a href="index.html">
+    <a href="/">
+    <img src="/image/logo.png" width="50px" height="50px">
     <h2>Nursing PastCO</h2>
     </a>
     <div id="level-drop-1">
     <button type="button"><i class="fa-solid fa-book"></i> Past Questions</button>
-    
+
     <div id="drop-links-1">
 
     <p style="color: black; font-family: sans-serif; padding: 0.5rem; text-align: center; background-color: lightblue; border-radius: 5px 5px 0 0;">Select Institution</p>
@@ -84,48 +86,59 @@
     <div style="border: 1.5px solid lightblue; border-radius: 0px 0px 5px 5px;" class="btn">
 
     <button type="button">
-      <img id="openKaaf-1" src="images/kaaflogo.jpg" alt="kaaf logo" width="100%">
+      <img id="openKaaf-1" src="image/kaaf.png" alt="kaaf logo" width="100%">
 
-      <div style="width: 100%; padding: 0; margin: 0 0 0 -0.5rem; width: 100%; border: none;" class="kaaf-levels" id="kaaf-levels-1">
-      <div style="border: none;" class="levels-links">
+      <div style="width: 100%; padding: 0; border: none;" class="kaaf-levels" id="kaaf-levels-1">
+      <div style="border: none;" class="levels-links-1">
       <i id="close-kaaf-levels-1" style="color: lightblue;" class="fa-solid fa-circle-xmark"></i>
-      <a href="/kaaf/past-questions1.html">KAAF 100 Level</a>
-      <a href="/kaaf/past-questions2.html">KAAF 200 Level</a>
-      <a href="/kaaf/past-questions3.html">KAAF 300 Level</a>
-      <a style="margin-bottom: 0;" href="/kaaf/past-questions4.html">KAAF 400 Level</a>
+      <a  href="/kaaf/100level">KAAF 100 Level</a>
+      <a href="/kaaf/200level">KAAF 200 Level</a>
+      <a href="/kaaf/300level">KAAF 300 Level</a>
+      <a style="margin-bottom: 0;" href="/kaaf/400level">KAAF 400 Level</a>
       </div>
     </div>
     </button>
 
     <button type="button">
-      <img id="openCug-1" src="images/cug.png" alt="Guc logo" width="100%">
+      <img id="openCug-1" src="image/cug.png" alt="logo" width="100%">
 
-      <div style="width: 100%; padding: 0; margin: 0 0 0 -0.5rem; width: 100%; border: none;" class="cug-levels" id="cug-levels-1">
-      <div style="border: none;" class="levels-links">
+      <div style="width: 100%; padding: 0; border: none;" class="cug-levels" id="cug-levels-1">
+      <div style="border: none;" class="levels-links-1">
       <i id="close-cug-levels-1" style="color: lightblue;" class="fa-solid fa-circle-xmark"></i>
-      <a style="margin-bottom: 0;" href="/cug/past-questions4.html">GUC 400 Level</a>
+      <a style="margin-bottom: 0;" href="/cug/400level">CUG 400 Level</a>
+      </div>
+    </div>
+    </button>
+
+    <button type="button">
+      <img id="openCsuc-1" src="image/csuc.png" alt="logo" width="100%">
+
+      <div style="width: 100%; padding: 0; border: none;" class="csuc-levels" id="csuc-levels-1">
+      <div style="border: none;" class="levels-links-1">
+      <i id="close-csuc-levels-1" style="color: lightblue;" class="fa-solid fa-circle-xmark"></i>
+      <a style="margin-bottom: 0;" href="/csuc">CSUC PAST QUESTIONS</a>
       </div>
     </div>
     </button>
 
     <button id="openNmtcasan-1" type="button">
-      <img src="images/nmtca.png" alt="logo" width="100%">
+      <img src="image/nmtcasan.png" alt="logo" width="100%">
 
-      <div style="width: 100%; padding: 0; margin: 0 0 0 -0.5rem; width: 100%; border: none;" class="nmtcasan-levels" id="nmtcasan-levels-1">
-      <div style="border: none;" class="levels-links">
+      <div style="width: 100%; padding: 0; border: none;" class="nmtcasan-levels" id="nmtcasan-levels-1">
+      <div style="border: none;" class="levels-links-1">
       <i id="close-nmtcasan-levels-1" style="color: lightblue;" class="fa-solid fa-circle-xmark"></i>
-      <a style="margin-bottom: 0;" href="/nmtc/past-questions.html">NMTC PAST QUESTIONS</a>
+      <a style="margin-bottom: 0;" href="/nmtc">NMTC PAST QUESTIONS</a>
       </div>
     </div>
     </button>
 
     <button id="openNmtcatibie-1" type="button">
-      <img src="images/nmtcatibie.png" alt="logo" width="100%">
+      <img src="image/nmtcatibie.png" alt="logo" width="100%">
 
-      <div style="width: 100%; padding: 0; margin: 0 0 0 -0.5rem; width: 100%; border: none;" class="nmtcatibie-levels" id="nmtcatibie-levels-1">
-      <div style="border: none;" class="levels-links">
+      <div style="width: 100%; padding: 0; border: none;" class="nmtcatibie-levels" id="nmtcatibie-levels-1">
+      <div style="border: none;" class="levels-links-1">
       <i id="close-nmtcatibie-levels-1" style="color: lightblue;" class="fa-solid fa-circle-xmark"></i>
-      <a style="margin-bottom: 0;" href="/nmtc/past-questions.html">NMTC PAST QUESTIONS</a>
+      <a style="margin-bottom: 0;" href="/nmtc">NMTC PAST QUESTIONS</a>
       </div>
     </div>
     </button>
@@ -133,7 +146,7 @@
     </div>
 
     </div>
-    </div>
+  </div>
 
    <nav>
     <i id="bars" class="fa-solid fa-bars"></i>
@@ -177,6 +190,11 @@
       <h3>Physical Assessment</h3>
       <h3>Obstetrics Nursing III</h3>
       <h3>Medicine and Medical Nursing</h3>
+      <h3>Obstetric and Gynaecological Nursing</h3>
+      <h3>Theoretical Foundations of Nursing</h3>
+      <h3>Commodity and Supply Chain</h3>
+      <h3>Management and Administration in Nursing</h3>
+      <h3>Medical Surgery</h3>
 
       <p id="not-found" style="display: none; color: white; text-align: center; padding-top: 0.5rem;">Course not found</p>
     </div>
@@ -185,7 +203,7 @@
     
   </header>
 
-  <main id="home" style="margin-top: 3.5rem;">
+  <main id="home" style="margin-top: 4rem;">
 
     <h1>Nursing Examination Past Questions — Available to Read Online</h1>
     <div id="hero">
@@ -203,23 +221,28 @@
       <p style="color: white; font-family: sans-serif;">Select Institution</p>
     <div class="btn">
     <button id="openKaaf" type="button">
-      <img src="images/kaaflogo.jpg" alt="kaaf logo" width="100%">
-      <h4>KAAF UNIVERSITY</h4>
+      <img src="image/kaaf.png" alt="kaaf logo" width="100%">
+      <h4>KAAF University</h4>
     </button>
 
     <button id="openCug" type="button">
-      <img src="images/cug.png" alt="logo" width="100%">
-      <h4>CATHOLIC UNIVERSITY</h4>
+      <img src="image/cug.png" alt="logo" width="100%">
+      <h4>Catholic University</h4>
+    </button>
+
+    <button id="openCsuc" type="button">
+      <img src="image/csuc.png" alt="logo" width="100%">
+      <h4>Christian Service University College</h4>
     </button>
 
     <button id="openNmtcasan" type="button">
-      <img src="images/nmtca.png" alt="logo" width="100%">
-      <h4>NMTC ASANKRANGWA</h4>
+      <img src="image/nmtcasan.png" alt="logo" width="100%">
+      <h4>Nursing and Midwifery Training College</h4>
     </button>
 
     <button id="openNmtcatibie" type="button">
-      <img src="images/nmtcatibie.png" alt="logo" width="100%">
-      <h4>NMTC ATIBE</h4>
+      <img src="image/nmtcatibie.png" alt="logo" width="100%">
+      <h4>Nursing and Midwifery Training College</h4>
     </button>
     </div>
     </div>
@@ -227,31 +250,38 @@
     <div class="kaaf-levels" id="kaaf-levels">
       <div class="levels-links">
       <i id="close-kaaf-levels" style="color: lightblue;" class="fa-solid fa-circle-xmark"></i>
-      <a href="/kaaf/past-questions1.html">KAAF 100 Level</a>
-      <a href="/kaaf/past-questions2.html">KAAF 200 Level</a>
-      <a href="/kaaf/past-questions3.html">KAAF 300 Level</a>
-      <a style="margin-bottom: 0;" href="/kaaf/past-questions4.html">KAAF 400 Level</a>
+      <a href="/kaaf/100level">KAAF 100 Level</a>
+      <a href="/kaaf/200level">KAAF 200 Level</a>
+      <a href="/kaaf/300level">KAAF 300 Level</a>
+      <a style="margin-bottom: 0;" href="/kaaf/400level">KAAF 400 Level</a>
       </div>
     </div>
 
     <div class="cug-levels" id="cug-levels">
       <div class="levels-links">
       <i id="close-cug-levels" style="color: lightblue;" class="fa-solid fa-circle-xmark"></i>
-      <a style="margin-bottom: 0;" href="/cug/past-questions4.html">CUG 400 Level</a>
+      <a style="margin-bottom: 0;" href="/cug/400level">CUG 400 Level</a>
+      </div>
+    </div>
+
+    <div class="csuc-levels" id="csuc-levels">
+      <div class="levels-links">
+      <i id="close-cug-levels" style="color: lightblue;" class="fa-solid fa-circle-xmark"></i>
+      <a style="margin-bottom: 0;" href="/csuc/">CSUC PAST QUESTIONS</a>
       </div>
     </div>
 
     <div class="nmtcasan-levels" id="nmtcasan-levels">
       <div class="levels-links">
       <i id="close-nmtcasan-levels" style="color: lightblue;" class="fa-solid fa-circle-xmark"></i>
-      <a style="margin-bottom: 0;" href="/nmtc/past-questions.html">NMTC PAST QUESTIONS</a>
+      <a style="margin-bottom: 0;" href="/nmtc">NMTC PAST QUESTIONS</a>
       </div>
     </div>
 
     <div class="nmtcatibie-levels" id="nmtcatibie-levels">
       <div class="levels-links">
       <i id="close-nmtcatibie-levels" style="color: lightblue;" class="fa-solid fa-circle-xmark"></i>
-      <a style="margin-bottom: 0;" href="/nmtc/past-questions.html">NMTC PAST QUESTIONS</a>
+      <a style="margin-bottom: 0;" href="/nmtc">NMTC PAST QUESTIONS</a>
       </div>
     </div>
 
@@ -276,13 +306,14 @@
     </div>
 
     </main>
+    <div class="bottom-line"></div>
   <footer>
     <div>
-      <a href="terms.html">Terms of use</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact Us</a>
-      <a href="disclaimer.html">Disclaimer</a>
+      <a href="/terms/">Terms of use</a>
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/about/">About Us</a>
+      <a href="/contact/">Contact Us</a>
+      <a href="/disclaimer/">Disclaimer</a>
     </div>
     <p>&copy; Nursing PastCO 2025 &ndash; <span id="displayDate"></span>. All rights reserved</p>
     <p><small>Disclaimer: We are an independent resource and not affiliated with any official nursing body. Materials are for study purposes only.</small></p>

@@ -57,6 +57,12 @@ $(document).ready(function() {
 })
 
 $(document).ready(function() {
+    $("#openCsuc").click(function() {
+        $("#csuc-levels").slideToggle();
+    })
+})
+
+$(document).ready(function() {
     $("#openKaaf-1").click(function() {
         $("#kaaf-levels-1").slideToggle();
     })
@@ -65,6 +71,12 @@ $(document).ready(function() {
 $(document).ready(function() {
     $("#openCug-1").click(function() {
         $("#cug-levels-1").slideToggle();
+    })
+})
+
+$(document).ready(function() {
+    $("#openCsuc-1").click(function() {
+        $("#csuc-levels-1").slideToggle();
     })
 })
 
@@ -86,9 +98,16 @@ $(document).ready(function() {
     })
 })
 
+
 $(document).ready(function() {
     $("#close-cug-levels").click(function() {
         $("#cug-levels").slideToggle();
+    })
+})
+
+$(document).ready(function() {
+    $("#close-csuc-levels").click(function() {
+        $("#csuc-levels").slideToggle();
     })
 })
 
@@ -101,6 +120,12 @@ $(document).ready(function() {
 $(document).ready(function() {
     $("#close-cug-levels-1").click(function() {
         $("#cug-levels-1").slideToggle();
+    })
+})
+
+$(document).ready(function() {
+    $("#close-csuc-levels-1").click(function() {
+        $("#csuc-levels-1").slideToggle();
     })
 })
 
