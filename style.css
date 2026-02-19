@@ -76,6 +76,7 @@ main#home > #level-drop > button i {
 main#home > #level-drop > button {
   font-size: 1.1rem;
   margin: 1rem auto;
+  width: 90%;
 }
 
 main#home #drop-links a {
@@ -274,9 +275,9 @@ header #level-drop-1 {
   border: 2px solid lightblue;
   font-family: sans-serif;
   padding: 1.3rem 0;
-  width: 70%;
+  width: 90%;
   display: block;
-  margin: auto;
+  margin: 0 auto 1rem;
   text-align: center;
   border-radius: 5px;
   font-weight: bold;
@@ -811,6 +812,132 @@ a:active {
   opacity: 0.7;
 }
 
+header .stretch-btns button {
+  border: 1.5px solid lightblue;
+  padding: 0.5rem;
+  background-color: black;
+  width: 100%;
+  border-radius: 5px;
+}
+
+header .stretch-btns {
+  position: relative;
+}
+
+header .stretch-btns .drop-down {
+  display: none;
+  position: absolute;
+  width: 350px;
+  right: -1rem;
+  top: 4rem;
+}
+
+header .stretch-btns .drop-down a {
+  background-color: black;
+  width: 100%;
+  display: block;
+  margin: 0 0 1rem;
+}
+
+header .stretch-btns .drop-down.show-top-links {
+  display: block;
+}
+
+
+#notes-textbooks {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 150px 300px 300px 300px 300px 300px 300px 300px 300px;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 2rem;
+}
+
+.routine-immunization {
+  background-image: url("./image/textbooks/routine-immunization.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.fluid-electrolyte-1 {
+  background-image: url("./image/textbooks/fluid\ and\ electrolytes\ 1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.pharmacology-bundle {
+  background-image: url("./image/textbooks/pharmacology\ bundle.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.davis-medSurg {
+  background-image: url("./image/textbooks/davis-medSurg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.fluid-electrolyte-demystified {
+  background-image: url("./image/textbooks/fluid\ and\ electrolytes\ demy.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.gerontological {
+  background-image: url("./image/textbooks/gerontological.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.psychology-for-nurses {
+  background-image: url("./image/textbooks/psychology\ for\ nurses.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.nursing-manage-leadership {
+  background-image: url("./image/textbooks/nursing\ management\ and\ leadership.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.research-statistics-nursing {
+  background-image: url("./image/textbooks/research\ and\ statistics\ in\ nursing.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.respiratory-disorder {
+  background-image: url("./image/textbooks/respiratory\ disorders.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.cold-chain-logistics {
+  background-image: url("./image/textbooks/cold\ chain\ and\ logistics.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.foundation-nursing-research {
+  background-image: url("./image/textbooks/foundation\ of\ nursing\ research.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.nursing-informatics {
+  background-image: url("./image/textbooks/nursing\ informatics.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#notes-textbooks .notes > a {
+  color: lightblue;
+  font-family: sans-serif;
+  border: 1.5px solid lightblue;
+  display: block;
+}
+
 
 @media (min-width: 550px) and (max-width: 768px) {
   /* Styles for large phones or small tablets */
@@ -913,7 +1040,7 @@ a:active {
 
   header {
     display: grid;
-    grid-template-columns: 25% 35% 35% 5%;
+    grid-template-columns: 50% 10% 35% 5%;
     justify-content: space-between;
     align-items: center;
   }
@@ -965,19 +1092,18 @@ a:active {
      margin: auto;
   }
 
-  header {
-    display: grid;
-    grid-template-columns: 2fr 3fr 2fr 0.5fr;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   a#nmc-btn {
   display: block;
   width: 80%;
   justify-self: flex-end;
   }
 
+  header {
+    display: grid;
+    grid-template-columns: 60% 10% 25% 5%;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   main#home h1 {
     width: 75%;

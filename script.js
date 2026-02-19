@@ -81,3 +81,19 @@ linkBtn.forEach((btn, index) => {
     notFound.style.display = found ? "none" : "block";
   })
 }
+
+{
+  const links = document.querySelector("header .stretch-btns > .drop-down");
+  const btn = document.querySelector("header .stretch-btns button");
+  const icon = document.querySelector("header .stretch-btns i");
+  
+  btn.addEventListener("click", function() {
+    const tog = links.classList.toggle("show-top-links");
+
+    if (tog) {
+      icon.setAttribute("class", "fa-solid fa-chevron-up");
+    } else {
+      icon.setAttribute("class", "fa-solid fa-chevron-down");
+    }
+  });
+}
