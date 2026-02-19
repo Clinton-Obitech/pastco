@@ -822,6 +822,7 @@ header .stretch-btns button {
 
 header .stretch-btns {
   position: relative;
+  display: none;
 }
 
 header .stretch-btns .drop-down {
@@ -843,14 +844,48 @@ header .stretch-btns .drop-down.show-top-links {
   display: block;
 }
 
+#textbooks {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 0.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.textbook {
+  border: 1.5px solid lightblue;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.textbook > h3 {
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
 
 #notes-textbooks {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 150px 300px 300px 300px 300px 300px 300px 300px 300px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 50px;
   justify-content: center;
-  gap: 30px;
-  padding: 0 2rem;
+  align-items: center;
+}
+
+#notes-textbooks > a {
+  height: 350px;
+  width: 300px;
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+  font-family: sans-serif;
+  background-color: lightblue;
 }
 
 .routine-immunization {
@@ -975,6 +1010,10 @@ header .stretch-btns .drop-down.show-top-links {
   main {
     padding-top: 1.8rem;
   }
+
+  header .stretch-btns {
+  display: block;
+}
 
   main#past h3.head {
     text-align: center;
