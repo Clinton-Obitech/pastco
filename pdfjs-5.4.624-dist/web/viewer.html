@@ -39,10 +39,10 @@ See https://github.com/adobe-type-tools/cmap-resources
   <body tabindex="0">
     <script type="module">
   // Import PDF.js modules
-  import { getDocument, GlobalWorkerOptions } from '../build/pdf.mjs';
+  import { getDocument, GlobalWorkerOptions } from './build/pdf.mjs';
 
   // Point to the worker
-  GlobalWorkerOptions.workerSrc = '../build/pdf.worker.mjs';
+  GlobalWorkerOptions.workerSrc = './build/pdf.worker.mjs';
 
   async function loadPDFViaBlob() {
     // Get the file= URL parameter
