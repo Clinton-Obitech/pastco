@@ -54,6 +54,11 @@ main {
   margin-top: 6rem;
 }
 
+#textbooks > .textbook {
+  border: 1.5px solid lightblue;
+  border-radius: 5px;
+}
+
 a.success-tablet {
   background-image: url("/image/textbooks/Success\ tablet.jpg");
   background-repeat: no-repeat;
