@@ -844,32 +844,9 @@ header .stretch-btns .drop-down.show-top-links {
   display: block;
 }
 
-#textbooks {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  padding: 0.5rem;
+main#past h1 {
+  text-transform: capitalize;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-
-.textbook {
-  border: 1.5px solid lightblue;
-  padding: 0.5rem;
-  border-radius: 5px;
-  scroll-margin-top: 100px;
-}
-
-.textbook > h3 {
-  color: white;
-  font-family: sans-serif;
-  text-align: center;
-  padding-bottom: 0.5rem;
-  text-transform: uppercase;
-}
-
 
 #notes-textbooks {
   display: flex;
