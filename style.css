@@ -54,6 +54,43 @@ main {
   margin-top: 6rem;
 }
 
+a.success-tablet {
+  background-image: url("/image/textbooks/Success\ tablet.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+a.richard-practice {
+  background-image: url("/image/textbooks/Richard\ practice.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+#textbooks > a {
+  background-color: lightblue;
+  color: #000;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin: 1rem;
+  display: block;
+  font-family: sans-serif;
+}
+
+#nmcn-textbooks {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  padding: 0 1rem 0.5rem;
+}
+
+#nmcn-textbooks > a {
+  height: 350px;
+  width: 250px;
+  border: 1.5px solid lightblue;
+  border-radius: 5px;
+}
+
 iframe {
   border-radius: 5px;
   box-shadow: 0.5px 0.5px 4px black;
